@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.0.5](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.0.4...v1.0.5) (2021-06-10)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.utilities.shaders.unity ([7a96705](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/commit/7a967052f07ec272a51d0200f89ffade6b83ea45))
+  > Bumps [io.extendreality.tilia.utilities.shaders.unity](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity) from 1.1.0 to 1.2.0. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/compare/v1.1.0...v1.2.0)
+* **README.md:** update title logo to related-media repo ([38a46d0](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/commit/38a46d03e1914a9e7109436e9e9f2680ed6db5af))
+  > The title logo is now located on the related-media repo.
+
 ### [1.0.4](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.0.3...v1.0.4) (2021-05-09)
 
 #### Miscellaneous Chores
