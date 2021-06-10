@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.6](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.0.5...v1.0.6) (2021-06-10)
+
+#### Bug Fixes
+
+* **Materials:** update fade material to use better shader ([9e2dc3f](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/commit/9e2dc3f07548af527dce1dc9fe81a8a6bd8507bc))
+  > The new TransparentColorBlockout shader is a better, more simpler shader to use for screen fading and it is also compatible with the URP approach to screen fading.
+
 ### [1.0.5](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.0.4...v1.0.5) (2021-06-10)
 
 #### Miscellaneous Chores
