@@ -2,7 +2,7 @@
     "name": "io.extendreality.tilia.visuals.collisionfader.unity",
     "displayName": "Tilia Visuals CollisionFader Unity",
     "description": "Control fading of scene cameras due to collisions of spatial objects for the Unity software.",
-    "version": "1.0.16",
+    "version": "1.0.17",
     "unity": "2018.3",
     "unityRelease": "10f1",
     "keywords": [

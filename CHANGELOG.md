@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.17](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.0.16...v1.0.17) (2021-12-03)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.zinnia.unity from 1.38.1 to 1.39.0 ([0b25297](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/commit/0b25297a3fc63964f52b8b1a221443033443af1f))
+  > Bumps [io.extendreality.zinnia.unity](https://github.com/ExtendRealityLtd/Zinnia.Unity) from 1.38.1 to 1.39.0. - [Release notes](https://github.com/ExtendRealityLtd/Zinnia.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Zinnia.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Zinnia.Unity/compare/v1.38.1...v1.39.0)
+
 ### [1.0.16](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.0.15...v1.0.16) (2021-07-21)
 
 #### Miscellaneous Chores
