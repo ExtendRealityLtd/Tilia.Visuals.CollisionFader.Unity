@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.28](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.0.27...v1.0.28) (2022-01-17)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.mutators.objectfollower.unity ([a610727](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/commit/a6107271fcb80f89157ce4dae899ababc2cc891d))
+  > Bumps [io.extendreality.tilia.mutators.objectfollower.unity](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity) from 1.2.12 to 1.2.13. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity/compare/v1.2.12...v1.2.13)
+
 ### [1.0.27](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.0.26...v1.0.27) (2022-01-17)
 
 #### Miscellaneous Chores
