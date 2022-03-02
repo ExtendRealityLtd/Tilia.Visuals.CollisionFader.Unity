@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.0.32...v1.1.0) (2022-03-02)
+
+#### Features
+
+* **package.json:** add information urls to package ([52cfd7d](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/commit/52cfd7d48bc9812a073336760ee2d1c4c33ce097))
+  > The changelog, documentation and license url has been added to the package.json as these are used within the Unity package manager.
+
 ### [1.0.32](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.0.31...v1.0.32) (2022-02-14)
 
 #### Miscellaneous Chores
