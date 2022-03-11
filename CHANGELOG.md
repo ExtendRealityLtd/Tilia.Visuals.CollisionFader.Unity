@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.1.2...v1.2.0) (2022-03-11)
+
+#### Features
+
+* **HowToGuides:** add guide on adding a collision fader ([f3c245c](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/commit/f3c245c46e677d3d663ba77d0ce02ea18b605a53))
+  > The How-To Guide showing how to add a collision fader to the scene.
+
 ### [1.1.2](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v1.1.1...v1.1.2) (2022-03-02)
 
 #### Miscellaneous Chores
