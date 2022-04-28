@@ -1,7 +1,5 @@
 ﻿namespace Tilia.Visuals.CollisionFader
 {
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using UnityEngine;
     using Zinnia.Data.Attribute;
     using Zinnia.Extension;
@@ -15,33 +13,83 @@
     public class CollisionFaderConfigurator : MonoBehaviour
     {
         #region Facade Settings
+        [Header("Facade Settings")]
+        [Tooltip("The public interface facade.")]
+        [SerializeField]
+        [Restricted]
+        private CollisionFaderFacade facade;
         /// <summary>
         /// The public interface facade.
         /// </summary>
-        [Serialized]
-        [field: Header("Facade Settings"), DocumentedByXml, Restricted]
-        public CollisionFaderFacade Facade { get; protected set; }
+        public CollisionFaderFacade Facade
+        {
+            get
+            {
+                return facade;
+            }
+            protected set
+            {
+                facade = value;
+            }
+        }
         #endregion
 
         #region Reference Settings
+        [Header("Reference Settings")]
+        [Tooltip("The linked ObjectFollower to attach the source to.")]
+        [SerializeField]
+        [Restricted]
+        private ObjectFollower sourceFollower;
         /// <summary>
         /// The linked <see cref="ObjectFollower"/> to attach the source to.
         /// </summary>
-        [Serialized]
-        [field: Header("Facade Settings"), DocumentedByXml, Restricted]
-        public ObjectFollower SourceFollower { get; protected set; }
+        public ObjectFollower SourceFollower
+        {
+            get
+            {
+                return sourceFollower;
+            }
+            protected set
+            {
+                sourceFollower = value;
+            }
+        }
+        [Tooltip("The linked CollisionNotifierEventProxyEmitter to set the valid collisions rule on.")]
+        [SerializeField]
+        [Restricted]
+        private CollisionNotifierEventProxyEmitter collisionProxy;
         /// <summary>
         /// The linked <see cref="CollisionNotifierEventProxyEmitter"/> to set the valid collisions rule on.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public CollisionNotifierEventProxyEmitter CollisionProxy { get; protected set; }
+        public CollisionNotifierEventProxyEmitter CollisionProxy
+        {
+            get
+            {
+                return collisionProxy;
+            }
+            protected set
+            {
+                collisionProxy = value;
+            }
+        }
+        [Tooltip("The linked CameraColorOverlay to use to fade the camera.")]
+        [SerializeField]
+        [Restricted]
+        private CameraColorOverlay fadeOverlay;
         /// <summary>
         /// The linked <see cref="CameraColorOverlay"/> to use to fade the camera.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public CameraColorOverlay FadeOverlay { get; protected set; }
+        public CameraColorOverlay FadeOverlay
+        {
+            get
+            {
+                return fadeOverlay;
+            }
+            protected set
+            {
+                fadeOverlay = value;
+            }
+        }
         #endregion
 
         /// <summary>

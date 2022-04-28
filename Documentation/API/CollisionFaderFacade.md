@@ -13,6 +13,9 @@ The public interface for the CollisionFader prefab.
   * [Configuration]
   * [Source]
 * [Methods]
+  * [ClearCameraValidity()]
+  * [ClearCollisionValidity()]
+  * [ClearSource()]
   * [OnAfterCameraValidityChange()]
   * [OnAfterCollisionValidityChange()]
   * [OnAfterSourceChange()]
@@ -78,6 +81,36 @@ public GameObject Source { get; set; }
 
 ### Methods
 
+#### ClearCameraValidity()
+
+Clears [CameraValidity].
+
+##### Declaration
+
+```
+public virtual void ClearCameraValidity()
+```
+
+#### ClearCollisionValidity()
+
+Clears [CollisionValidity].
+
+##### Declaration
+
+```
+public virtual void ClearCollisionValidity()
+```
+
+#### ClearSource()
+
+Clears [Source].
+
+##### Declaration
+
+```
+public virtual void ClearSource()
+```
+
 #### OnAfterCameraValidityChange()
 
 Called after [CameraValidity] has been changed.
@@ -113,6 +146,9 @@ protected virtual void OnAfterSourceChange()
 [CameraValidity]: CollisionFaderFacade.md#CameraValidity
 [CollisionValidity]: CollisionFaderFacade.md#CollisionValidity
 [Source]: CollisionFaderFacade.md#Source
+[CameraValidity]: CollisionFaderFacade.md#CameraValidity
+[CollisionValidity]: CollisionFaderFacade.md#CollisionValidity
+[Source]: CollisionFaderFacade.md#Source
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
@@ -122,6 +158,9 @@ protected virtual void OnAfterSourceChange()
 [Configuration]: #Configuration
 [Source]: #Source
 [Methods]: #Methods
+[ClearCameraValidity()]: #ClearCameraValidity
+[ClearCollisionValidity()]: #ClearCollisionValidity
+[ClearSource()]: #ClearSource
 [OnAfterCameraValidityChange()]: #OnAfterCameraValidityChange
 [OnAfterCollisionValidityChange()]: #OnAfterCollisionValidityChange
 [OnAfterSourceChange()]: #OnAfterSourceChange
