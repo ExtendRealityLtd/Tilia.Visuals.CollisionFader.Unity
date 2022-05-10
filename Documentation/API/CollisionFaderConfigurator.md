@@ -13,6 +13,8 @@ Sets up the CollisionFader prefab based on the provided user settings.
   * [FadeOverlay]
   * [SourceFollower]
 * [Methods]
+  * [NotifyFaded()]
+  * [NotifyUnfaded()]
   * [OnEnable()]
   * [SetupCollisionRule()]
   * [SetupFadeOverlay()]
@@ -79,6 +81,26 @@ public ObjectFollower SourceFollower { get; protected set; }
 
 ### Methods
 
+#### NotifyFaded()
+
+Emits the Facade.Faded event.
+
+##### Declaration
+
+```
+public virtual void NotifyFaded()
+```
+
+#### NotifyUnfaded()
+
+Emits the Facade.Unfaded event.
+
+##### Declaration
+
+```
+public virtual void NotifyUnfaded()
+```
+
 #### OnEnable()
 
 ##### Declaration
@@ -131,6 +153,8 @@ public virtual void SetupFollower()
 [FadeOverlay]: #FadeOverlay
 [SourceFollower]: #SourceFollower
 [Methods]: #Methods
+[NotifyFaded()]: #NotifyFaded
+[NotifyUnfaded()]: #NotifyUnfaded
 [OnEnable()]: #OnEnable
 [SetupCollisionRule()]: #SetupCollisionRule
 [SetupFadeOverlay()]: #SetupFadeOverlay

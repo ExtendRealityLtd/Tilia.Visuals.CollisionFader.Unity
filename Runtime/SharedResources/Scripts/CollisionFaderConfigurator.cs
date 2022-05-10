@@ -122,6 +122,22 @@
             FadeOverlay.CameraValidity = FadeOverlay.CameraValidity;
         }
 
+        /// <summary>
+        /// Emits the <see cref="Facade.Faded"/> event.
+        /// </summary>
+        public virtual void NotifyFaded()
+        {
+            Facade.Faded?.Invoke();
+        }
+
+        /// <summary>
+        /// Emits the <see cref="Facade.Unfaded"/> event.
+        /// </summary>
+        public virtual void NotifyUnfaded()
+        {
+            Facade.Unfaded?.Invoke();
+        }
+
         protected virtual void OnEnable()
         {
             SetupFollower();
