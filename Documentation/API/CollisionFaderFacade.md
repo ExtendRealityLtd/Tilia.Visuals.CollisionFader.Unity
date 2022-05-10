@@ -7,10 +7,15 @@ The public interface for the CollisionFader prefab.
 * [Inheritance]
 * [Namespace]
 * [Syntax]
+* [Fields]
+  * [Faded]
+  * [Unfaded]
 * [Properties]
   * [CameraValidity]
+  * [ColliderContainer]
   * [CollisionValidity]
   * [Configuration]
+  * [OverlayContainer]
   * [Source]
 * [Methods]
   * [ClearCameraValidity()]
@@ -37,6 +42,26 @@ The public interface for the CollisionFader prefab.
 public class CollisionFaderFacade : MonoBehaviour
 ```
 
+### Fields
+
+#### Faded
+
+##### Declaration
+
+```
+public UnityEvent Faded
+```
+
+#### Unfaded
+
+Emitted when the screen has unfaded completely.
+
+##### Declaration
+
+```
+public UnityEvent Unfaded
+```
+
 ### Properties
 
 #### CameraValidity
@@ -47,6 +72,16 @@ The rules to determine which scene cameras to apply the overlay to.
 
 ```
 public RuleContainer CameraValidity { get; set; }
+```
+
+#### ColliderContainer
+
+The container of the collider and collision logic.
+
+##### Declaration
+
+```
+public ObjectReference ColliderContainer { get; protected set; }
 ```
 
 #### CollisionValidity
@@ -67,6 +102,16 @@ The linked Internal Setup.
 
 ```
 public CollisionFaderConfigurator Configuration { get; protected set; }
+```
+
+#### OverlayContainer
+
+The container of the camera overlay and fading logic.
+
+##### Declaration
+
+```
+public ObjectReference OverlayContainer { get; protected set; }
 ```
 
 #### Source
@@ -152,10 +197,15 @@ protected virtual void OnAfterSourceChange()
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
+[Fields]: #Fields
+[Faded]: #Faded
+[Unfaded]: #Unfaded
 [Properties]: #Properties
 [CameraValidity]: #CameraValidity
+[ColliderContainer]: #ColliderContainer
 [CollisionValidity]: #CollisionValidity
 [Configuration]: #Configuration
+[OverlayContainer]: #OverlayContainer
 [Source]: #Source
 [Methods]: #Methods
 [ClearCameraValidity()]: #ClearCameraValidity

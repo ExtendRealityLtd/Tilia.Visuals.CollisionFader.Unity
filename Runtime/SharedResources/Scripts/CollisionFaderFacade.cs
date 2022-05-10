@@ -1,7 +1,9 @@
 ﻿namespace Tilia.Visuals.CollisionFader
 {
     using UnityEngine;
+    using UnityEngine.Events;
     using Zinnia.Data.Attribute;
+    using Zinnia.Data.Type;
     using Zinnia.Extension;
     using Zinnia.Rule;
 
@@ -77,8 +79,55 @@
         }
         #endregion
 
+        #region Fading Events
+        [Header("Fading Events")]
+        /// <summary>
+        /// Emitted when the screen has faded completely.
+        /// </summary>
+        public UnityEvent Faded = new UnityEvent();
+        /// <summary>
+        /// Emitted when the screen has unfaded completely.
+        /// </summary>
+        public UnityEvent Unfaded = new UnityEvent();
+        #endregion
+
         #region Reference Settings
         [Header("Reference Settings")]
+
+        [Tooltip("The container of the collider and collision logic.")]
+        [SerializeField]
+        private ObjectReference colliderContainer;
+        /// <summary>
+        /// The container of the collider and collision logic.
+        /// </summary>
+        public ObjectReference ColliderContainer
+        {
+            get
+            {
+                return colliderContainer;
+            }
+            protected set
+            {
+                colliderContainer = value;
+            }
+        }
+        [Tooltip("The container of the camera overlay and fading logic.")]
+        [SerializeField]
+        private ObjectReference overlayContainer;
+        /// <summary>
+        /// The container of the camera overlay and fading logic.
+        /// </summary>
+        public ObjectReference OverlayContainer
+        {
+            get
+            {
+                return overlayContainer;
+            }
+            protected set
+            {
+                overlayContainer = value;
+            }
+        }
         [Tooltip("The linked Internal Setup.")]
         [SerializeField]
         [Restricted]
