@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v2.0.5...v2.1.0) (2022-05-10)
+
+#### Features
+
+* **facade:** add faded and unfaded events ([ad43607](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/commit/ad4360725a105c8a4bdc9de8cb244e9b32c654aa))
+  > The Faded and Unfaded events are now bubbled to the facade to make it easier to access these moments. A couple of extra ObjectReference settings have been added too so it is easier to get to the relevant internal elements.
+
 ### [2.0.5](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v2.0.4...v2.0.5) (2022-05-09)
 
 #### Miscellaneous Chores
