@@ -3,6 +3,7 @@
     using UnityEngine;
     using Zinnia.Data.Attribute;
     using Zinnia.Extension;
+    using Zinnia.Tracking.Collision;
     using Zinnia.Tracking.Collision.Event.Proxy;
     using Zinnia.Tracking.Follow;
     using Zinnia.Visual;
@@ -52,6 +53,24 @@
             protected set
             {
                 sourceFollower = value;
+            }
+        }
+        [Tooltip("The linked CollisionTracker to track collisions with.")]
+        [SerializeField]
+        [Restricted]
+        private CollisionTracker sourceCollisionTracker;
+        /// <summary>
+        /// The linked <see cref="CollisionTracker"/> to track collisions with.
+        /// </summary>
+        public CollisionTracker SourceCollisionTracker
+        {
+            get
+            {
+                return sourceCollisionTracker;
+            }
+            protected set
+            {
+                sourceCollisionTracker = value;
             }
         }
         [Tooltip("The linked CollisionNotifierEventProxyEmitter to set the valid collisions rule on.")]
@@ -111,7 +130,15 @@
         /// </summary>
         public virtual void SetupCollisionRule()
         {
-            CollisionProxy.ReceiveValidity = Facade.CollisionValidity;
+            if (SourceCollisionTracker != null)
+            {
+                SourceCollisionTracker.ForwardingSourceValidity = Facade.CollisionValidity;
+            }
+
+            if (CollisionProxy != null)
+            {
+                CollisionProxy.ReceiveValidity = Facade.CollisionValidity;
+            }
         }
 
         /// <summary>
