@@ -1,5 +1,14 @@
 # Changelog
 
+### [2.1.6](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v2.1.5...v2.1.6) (2023-01-26)
+
+#### Bug Fixes
+
+* **Rule:** ensure collision rule blocks collision forwarding ([85a32b2](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/commit/85a32b2f07c00578bce59b5cd60f05f22fbd400c))
+  > Because the internal Collision Tracker extends a Collision Notifier this means that any collision with another object that contains a Collision Notifier/Tracker type will forward the collisions to the Collision Fader's Collision Tracker and therefore the Collision Validity rule will be ignored.
+  > 
+  > This fix sets the internal Collision Tracker Forward Source Validity to match that of the Facade Collision Validity to prevent this issue occuring.
+
 ### [2.1.5](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v2.1.4...v2.1.5) (2022-06-19)
 
 #### Miscellaneous Chores
