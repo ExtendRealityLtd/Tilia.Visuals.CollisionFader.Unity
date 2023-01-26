@@ -11,6 +11,7 @@ Sets up the CollisionFader prefab based on the provided user settings.
   * [CollisionProxy]
   * [Facade]
   * [FadeOverlay]
+  * [SourceCollisionTracker]
   * [SourceFollower]
 * [Methods]
   * [NotifyFaded()]
@@ -67,6 +68,16 @@ The linked CameraColorOverlay to use to fade the camera.
 
 ```
 public CameraColorOverlay FadeOverlay { get; protected set; }
+```
+
+#### SourceCollisionTracker
+
+The linked CollisionTracker to track collisions with.
+
+##### Declaration
+
+```
+public CollisionTracker SourceCollisionTracker { get; protected set; }
 ```
 
 #### SourceFollower
@@ -151,6 +162,7 @@ public virtual void SetupFollower()
 [CollisionProxy]: #CollisionProxy
 [Facade]: #Facade
 [FadeOverlay]: #FadeOverlay
+[SourceCollisionTracker]: #SourceCollisionTracker
 [SourceFollower]: #SourceFollower
 [Methods]: #Methods
 [NotifyFaded()]: #NotifyFaded

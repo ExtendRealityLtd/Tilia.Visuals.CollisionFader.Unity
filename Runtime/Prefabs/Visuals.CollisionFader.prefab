@@ -349,6 +349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facade: {fileID: 6159375174619301438}
   sourceFollower: {fileID: 3486422414244705064}
+  sourceCollisionTracker: {fileID: 3601242204351176722}
   collisionProxy: {fileID: 3601242204351176733}
   fadeOverlay: {fileID: 3601242203177762288}
 --- !u!1001 &3601242203254135430
