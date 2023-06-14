@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.1.31](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v2.1.30...v2.1.31) (2023-06-14)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.utilities.shaders.unity ([bafca45](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/commit/bafca45fce0de758ceb648c9c54e456733e28d62))
+  > Bumps [io.extendreality.tilia.utilities.shaders.unity](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity) from 1.3.1 to 1.4.0. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Utilities.Shaders.Unity/compare/v1.3.1...v1.4.0)
+
 ### [2.1.30](https://github.com/ExtendRealityLtd/Tilia.Visuals.CollisionFader.Unity/compare/v2.1.29...v2.1.30) (2023-05-06)
 
 #### Miscellaneous Chores
